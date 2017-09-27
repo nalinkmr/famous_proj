@@ -1,0 +1,103 @@
+<html>
+  <head>
+    <link href="stylee.css" rel="stylesheet" type="text/css" media="all" />
+
+    <style> 
+body {
+  background:url("images/signupp.jpg");
+  background-size: 1300px 700px;
+  background-repeat: no-repeat;
+}
+    </style>
+    <body>
+      <script>
+function myFunction() {
+  alert("Thankyou for registering brand");
+}
+      </script>
+      <style>
+td.add {background-color:lightblue}
+td.add1 {background-color:grey}
+td.add2 {background-color:lavender}
+td.add3 {background-color:}
+td.add4 {background-color:lightblue}
+
+      </style>
+  </head>
+  <font color="add8e6"> <h1 align="left">FamousEnuf</h1>
+    <font color="grey"> <h1 align="right">SIGN UP</h1><hr>
+      <table  class="logsin">
+        <tr>
+          <td>
+            <form name="myform" action="login.php" target="_top" method="POST" >
+              <input type="text" placeholder="enter user-name"  name="username" style="background-color:LightGreen" />
+              <input type="password" name="password" placeholder="enter password"style="background-color:LightGreen">   
+              <button name="subject" type="submit" value="submit">login</button>
+            </form>
+          </td>         
+        </tr>
+      </table>
+      <table>
+        <tr>
+          <th>
+            <form action="signup.php" method="POST" onsubmit="myFunction()">
+              <table align="right">
+                <tr>
+                  <td class="add1"><h3>CREATE AN ACCOUNT</h3></td>
+                </tr>
+                <tr>
+                  <td class ="add2" align="right">
+                    Brand Name</td>  
+                  <td class ="add2"align="left">
+                    <input type="text" placeholder= "
+                    brand name" name="name" />
+                  </td> 
+                </tr>
+                <tr>
+                  <td class ="add2" align="right">
+                    Account manager Name</td>  
+                  <td class ="add2"align="left">
+                    <input type="text" placeholder= "
+                    Managername" name="managername" />
+                  </td> 
+                </tr>
+
+                <tr>
+                  <td class ="add2"align="right">Email</td>
+                  <td class ="add2"align="left">
+                    <input type="text" placeholder="
+                    enter e-mail"  name="myemail" />
+                    <span class="error">* <?php echo $emailError;?></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class ="add2"align="right">Phone-Number</td>
+                  <td class ="add2"align="left">
+                    <input type="text" placeholder="
+                    enter number"  name="myphone" />
+                  </td>
+                </tr>
+                <tr>
+                  <td class ="add2"align="right">Password</td>
+                  <td class ="add2"align="left"><input type="password" name="mypassword" />
+                    <span class="error">*<?php echo $passwordError;?></span></td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="image" src="images/submit.jpg" name="submit" value="Submit" class="submit" width="48" height="48">
+                  </td>
+                </tr>
+            <tr>
+              <td>
+                <input type="image" src="images/reset.jpg" alt="submit" width="48" height="48">
+            </form>
+              </td>
+            </tr>
+
+          </th>
+          <tr>
+              </table>
+          </tr>
+      </table>
+    </body>
+</html> 
